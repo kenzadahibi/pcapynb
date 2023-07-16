@@ -4,7 +4,6 @@ from models import get_HF_embeddings, cosine
 import pdfplumber
 
 
-
 app = FastAPI()
 @app.post("/compare")
 async def compare_resume_to_jd(jd_text: str, files: List[UploadFile] = File(...)):
