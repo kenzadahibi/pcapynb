@@ -9,7 +9,8 @@ async def compare_resume_to_jd(jd_text: str, files: List[UploadFile] = File(...)
     # Get the embeddings of the job description
     jd_embedding = get_HF_embeddings(jd_text)
 
-    # Extract text from each file and get its embedding
+    # Extract text from each file and get its embeddin
+    
     file_embeddings = []
     for file in files:
         with pdfplumber.open(file.file) as pdf:
