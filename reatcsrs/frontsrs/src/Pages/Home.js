@@ -6,7 +6,6 @@ import Navbar from '../SharedComponent/Navbar/Navbar'
   return (
     <div>
     
-home
     </div>
   )
 }
