@@ -1,35 +1,88 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
 .container {
-background-color: #dddddd;
-border-radius: 20px;
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-display: flex;
-justify-content: center;
-align-items: center;
-height: 250px;
-width: 90%;
-margin: 50px auto;
-flex-direction: column; /* Ajout de la propriété flex-direction */
+  background-color: #dddddd;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+  width: 90%;
+  margin: 50px auto;
+  flex-direction: column;
+}
+
+.top-line {
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #572d13;
+  margin-bottom: 20px;
+  background-color: #9c7248;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .button-container {
-display: flex;
-justify-content: center;
-align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .button {
-font-family: 'Poppins', sans-serif;
-font-size: 20px; /* Augmenter la taille de la police /
-color: #ffffff;
-background-color: #ff8800;
-border-radius: 20px;
-padding: 20px 90px; / Augmenter le rembourrage /
-margin-right: 20px; / Augmenter l'espace entre les boutons */
-border: none;
-cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+  border-radius: 20px;
+  padding: 20px 90px;
+  margin-right: 20px;
+  border: none;
+  cursor: pointer;
+  background-color: #ff8800;
+}
+
+.orange {
+  background-color: #ff8800;
+}
+
+.gray {
+  background-color: #d3d3d3;
 }
 
 .button:last-child {
-margin-right: 0;}
+  margin-right: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+}
+
+li::before {
+  content: "•";
+  margin-right: 10px;
+  color: #ff8800;
+}
+.button1 {
+  background: transparent;
+  box-shadow: 0 0 0 2px #ff8800 inset, 0 0 0 4px rgba(255, 136, 0, 0.4);
+  border-radius: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: #ffffff;
+  padding: 20px 90px;
+  margin-right: 20px;
+  border: none;
+  cursor: pointer;
+}
+.button1:hover {
+  box-shadow: 0 0 0 2px #ff8800 inset, 0 0 0 6px rgba(255, 136, 0, 0.4);
+}
