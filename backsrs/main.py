@@ -3,6 +3,10 @@ from typing import List
 from fastapi.middleware.cors import CORSMiddleware
 from models import get_HF_embeddings, cosine
 import pdfplumber
+from routes.users import user_router
+from database.connection import Settings
+
+
 
 app = FastAPI()
 
@@ -13,6 +17,13 @@ app.add_middleware(
     allow_methods=['*'],
     allow_headers=['*']
 )
+
+
+app.include_router(user_router, prefix="/user")
+settings = Settings()
+@app.on_event("startup")
+async def init_db():
+    await settings.initialize_database()
 
 print('helloworld')
 
