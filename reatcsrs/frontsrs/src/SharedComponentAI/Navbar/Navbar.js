@@ -1,5 +1,5 @@
 import React from "react";
-import '../Navbar/Navbar.css'
+import './Navbar.css'
 import bcp from '../../assets/bcp.png'
 const Navbar = () => {
   return (
